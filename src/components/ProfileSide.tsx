@@ -3,16 +3,16 @@ import { Button } from "./ui/button";
 
 const ProfileSide = () => {
   return (
-    <div className="w-1/3 flex justify-center items-center px-10 h-screen sticky top-0">
-      <div className="flex flex-col justify-center items-center border border-secondary-foreground rounded-3xl p-4 space-y-5">
-        <div className="flex justify-between items-center gap-8">
+    <div className="w-[45%] flex justify-center items-center self-baseline py-8 px-10 sticky top-0">
+      <div className="flex flex-col justify-center items-center border border-secondary-foreground rounded-3xl p-5 space-y-3">
+        <div className="flex justify-between items-center gap-8 mt-2">
           <h5 className="text-3xl font-extrabold">Marchenda</h5>
           <p className="text-end font-semibold">Software Engineer</p>
         </div>
         <img
           src="/images/profile-img.jpg"
           alt="my-image"
-          className="rounded-xl w-2/3 h-2/3 object-cover"
+          className="rounded-2xl w-2/3 h-2/3 object-cover"
         />
         <div className="flex flex-col justify-center items-center">
           <p className="font-semibold">mezafuwandhana@gmail.com</p>

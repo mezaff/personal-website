@@ -1,11 +1,16 @@
 type SectionContainerProps = {
-  children: React.ReactNode;
+  id?: string;
   className?: string;
+  children: React.ReactNode;
 };
 
 const SectionContainer = (props: SectionContainerProps) => {
-  const { children, className } = props;
-  return <div className={className}>{children}</div>;
+  const { children, className, id } = props;
+  return (
+    <section id={id} className={className}>
+      {children}
+    </section>
+  );
 };
 
 export default SectionContainer;
