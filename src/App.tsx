@@ -7,29 +7,29 @@ import Skill from "./components/Skill";
 
 function App() {
   return (
-    <div className="flex flex-col md:flex-row-reverse md:justify-center items-center">
+    <div className="flex flex-col md:flex-row-reverse justify-center items-center w-full h-screen md:h-full gap-5">
       <ProfileSide />
-      <PageContainer className="w-[50%]">
+      <PageContainer className="md:w-[50%]">
         <SectionContainer
           id="home"
-          className="h-screen flex flex-col justify-center items-center"
+          className="h-screen flex flex-col justify-center items-center mb-15"
         >
           <Introduce />
         </SectionContainer>
         <SectionContainer
           id="about"
-          className="h-screen flex flex-col justify-center items-center"
+          className="h-screen flex flex-col justify-center items-center mb-15"
         >
           <About />
         </SectionContainer>
         <SectionContainer
           id="skills"
-          className="h-screen flex flex-col justify-center items-center"
+          className="h-screen flex flex-col justify-center items-center mb-15"
         >
           <Skill />
         </SectionContainer>
       </PageContainer>
-      <div className="w-[5%]"></div>
+      <div className="md:w-[5%]"></div>
     </div>
   );
 }

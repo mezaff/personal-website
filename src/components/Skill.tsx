@@ -81,7 +81,7 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="flex flex-col  items-end px-5 gap-4 w-full h-full">
+    <div className="flex flex-col  items-end px-5 gap-4 w-full h-full mt-50">
       <div className="flex flex-row gap-2 justify-center items-center self-end border-2 rounded-full py-2 px-4 mt-15">
         <PencilRuler />
         <p className="text-sm font-semibold">SKILLS</p>
