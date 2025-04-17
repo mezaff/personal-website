@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const ProfileSide = () => {
   return (
-    <div className="w-[45%] flex justify-center items-center md:self-baseline py-8 px-10 md:sticky md:top-0">
+    <div className="w-[45%] flex justify-center items-center  md:self-baseline py-8 px-10 md:sticky top-0">
       <div className="flex flex-col justify-center items-center border border-secondary-foreground rounded-3xl p-5 space-y-3">
         <div className="flex justify-between items-center gap-8 mt-2">
           <h5 className="text-3xl font-extrabold">Marchenda</h5>

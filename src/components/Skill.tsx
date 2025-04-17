@@ -81,12 +81,12 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="flex flex-col  items-end px-5 gap-4 w-full h-full mt-50 md:mt-20">
-      <div className="flex flex-row gap-2 justify-center items-center self-end border-2 rounded-full py-2 px-4 mt-15">
+    <div className="flex flex-col items-center md:items-end px-5 gap-4 md:mt-20">
+      <div className="flex flex-row gap-2 justify-center items-center self-center md:self-end border-2 rounded-full py-2 px-4">
         <PencilRuler />
         <p className="text-sm font-semibold">SKILLS</p>
       </div>
-      <h1 className="text-3xl leading-none text-end max-w-5xl font-semibold mt-5 mb-5">
+      <h1 className="text-3xl md:text-5xl leading-none text-center md:text-end max-w-5xl font-semibold mb-5 md:mt-5">
         My <span className="text-[#58C4DC]">Expertise</span>
       </h1>
       <div className="flex justify-center items-center gap-3 self-center">
