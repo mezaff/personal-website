@@ -81,6 +81,7 @@ const SosmedIcon = (props: SosmedIconProps) => {
     <a
       href={url}
       className="flex justify-center items-center w-10 h-10 rounded-full border-2 border-primary text-primary hover:border-[#58C4DC] hover:text-[#58C4DC] transition-all duration-200 ease-in-out cursor-pointer"
+      target="_blank"
     >
       {dataIcon.find((item) => item.name === props.type)?.icon}
     </a>

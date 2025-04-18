@@ -18,14 +18,17 @@ const ProfileSide = () => {
           <p className="font-semibold">mezafuwandhana@gmail.com</p>
           <p className="font-bold text-xl">Base in Madiun, ID</p>
         </div>
-        <div className="flex gap-2 justify-between items-center mt-3">
-          <SosmedIcon url="/" type="github" />
-          <SosmedIcon url="/" type="linkedin" />
-          <SosmedIcon url="/" type="instagram" />
-          <SosmedIcon url="/" type="tiktok" />
+        <div className="flex gap-2 justify-between items-center mt-2">
+          <SosmedIcon url={import.meta.env.VITE_GITHUB_URL} type="github" />
+          <SosmedIcon url={import.meta.env.VITE_LINKEDIN_URL} type="linkedin" />
+          <SosmedIcon
+            url={import.meta.env.VITE_INSTAGRAM_URL}
+            type="instagram"
+          />
+          <SosmedIcon url={import.meta.env.VITE_TIKTOK_URL} type="tiktok" />
         </div>
-        <Button className="flex justify-center items-center text-center bg-[#58C4DC] border-2 border-[#58C4DC] hover:bg-transparent hover:border-[#58C4DC] hover:border-2 hover:text-[#58C4DC] rounded-full cursor-pointer hover:scale-105 text-primary text-lg transition-all duration-200 ease-in-out">
-          Connect with me
+        <Button className="flex justify-center items-center text-center mt-1 bg-[#58C4DC] border-2 border-[#58C4DC] hover:bg-transparent hover:border-[#58C4DC] hover:border-2 hover:text-[#58C4DC] rounded-full cursor-pointer hover:scale-105 text-lg transition-all duration-200 ease-in-out">
+          GET IN TOUCH
         </Button>
         <footer className="flex p-4">
           <p className="w-full text-center text-muted-foreground">

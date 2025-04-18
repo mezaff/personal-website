@@ -7,7 +7,10 @@ type SectionContainerProps = {
 const SectionContainer = (props: SectionContainerProps) => {
   const { children, className, id } = props;
   return (
-    <section id={id} className={className}>
+    <section
+      id={id}
+      className={`${className} h-full flex flex-col justify-center items-center mb-15`}
+    >
       {children}
     </section>
   );

@@ -81,24 +81,26 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="flex flex-col items-center md:items-end px-5 gap-4 md:mt-20">
+    <div className="flex flex-col justify-center items-center md:items-end px-5 gap-4 md:w-full md:h-full">
       <div className="flex flex-row gap-2 justify-center items-center self-center md:self-end border-2 rounded-full py-2 px-4">
         <PencilRuler />
-        <p className="text-sm font-semibold">SKILLS</p>
+        <p className="text-xs md:text-sm font-semibold">SKILLS</p>
       </div>
       <h1 className="text-3xl md:text-5xl leading-none text-center md:text-end max-w-5xl font-semibold mb-5 md:mt-5">
         My <span className="text-[#58C4DC]">Expertise</span>
       </h1>
-      <div className="flex justify-center items-center gap-3 self-center">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+      <div className="flex justify-center items-center md:gap-3 self-center md:self-end my-5">
+        <div className="grid grid-cols-3 gap-2 md:gap-4 md:grid-cols-3 lg:grid-cols-5">
           {skills.map((skill) => (
             <Card
               key={skill.id}
-              className="w-40 h-40 flex flex-col items-center justify-center"
+              className="md:w-40 md:h-40 flex flex-col items-center justify-center"
             >
-              <CardContent className="flex flex-col items-center justify-between gap-3 h-2/3">
+              <CardContent className="flex flex-col items-center justify-between gap-2 md:gap-3 md:h-2/3">
                 <img src={skill.img} alt={skill.name} className="w-1/2" />
-                <p className="text-sm font-semibold">{skill.name}</p>
+                <p className="text-xs md:text-sm text-center md:font-semibold ">
+                  {skill.name}
+                </p>
               </CardContent>
             </Card>
           ))}
